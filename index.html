@@ -9,7 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
-    
+
+    <script src="https://kit.fontawesome.com/455d2aa063.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="index.js"></script>
     
@@ -18,39 +19,63 @@
 </head>
 <body>
     <div class="page" id="back">
-        <div id="type" style="padding-top: 300px;">
+        <div class="header">
+            <!-- <img src="images/gnh_logo.png" class="logo" style="width:100px; height:auto;"> -->
+            <div class="header-right">
+                <a href="tutoring.html" class="hvr-buzz-out" title="tutoring"><i class="fas fa-pencil-alt" style="padding-right: 20px;"></i></a>
+                <a href="events.html" class="hvr-buzz-out" title="events"><i class="fas fa-calendar" style="padding-right: 20px;"></i></a>
+                <a class="active" href="index.html" title="home"><i class="fas fa-home" style="padding-right: 20px;"></i></a>
+            </div>
+          </div>
+
+         <!-- animated type -->
+        <div id="type" style="padding-top: 150px;">
             <span is="type-async" id="type-text">...</span>
             <span class="blinking-cursor">_</span>
         </div>
 
+        <a href="#home" style="display: flex; justify-content: center;">
+            <img src="images/down-arrow.png" alt="down arrow" id="down-arrow">
+        </a>
     </div>
-    <div class="custom-shape-divider-bottom-1633480523">
-        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-            <path d="M1200,0H0V120H281.94C572.9,116.24,602.45,3.86,602.45,3.86h0S632,116.24,923,120h277Z" class="shape-fill"></path>
-        </svg>
-    </div>
+
     <div class="page" id="home">
+        <div style="display:flex;flex-direction:column;align-items: center;">
         <h1>Gamma Nu Eta - Alpha Chapter</h1>
+        <p style="width:80%;">
+            Gamma Nu Eta was established as the National Information Technology Honor Society 
+            to recognize and promote leadership and excellence in the study of IT.
+        </p>
+        </div>
         <ul>
-            <li>ITWS Honors Society</li>
+            <li>Renssealaer Polytechnic Institute's Information Technology & Web Science Honors Society</li>
             <li>Provides academic services such as tutoring</li>
             <li>Runs career-related events such as the Company Expose</li>
         </ul>
 
         <h1>Connect with us!</h1>
         
-        <div style="text-align: center;"><p class="hover-underline-animation"><a href="mailto:smitha24@rpi.edu" target="_blank">President - Andrew Smith</a></p></div>
-        <div style="text-align: center;"><p class="hover-underline-animation"><a href="mailto:gammanueta@rpi.edu" target="_blank">Mailing list</a></p></div>
-
-        <!-- add href tag after links are established-->
-        <div class="socials">
-            <div class="hvr-buzz-out" style="float:right"><a href="#"><img src="images/insta.svg" alt="instagram"></a></div>
-            <div class="hvr-buzz-out" style="float:right"><a href="#"></a><img src="images/tiktok.svg" alt="tiktok"></a></div>
-            <div class="hvr-buzz-out" style="float:right"><a href="#"><img src="images/linked.svg" alt="linked"></a></div>
-            <div class="hvr-buzz-out" style="float:right"><a href="#"><img src="images/twitter.svg" alt="twitter"></a></div>
-            <div class="hvr-buzz-out" style="float:right"><a href="#"><img src="images/fb.svg" alt="facebook"></a></div>
+        <div style="text-align: center;">
+            <img src="images/email.png" alt="mail icon" class="mail-icon">
+            <p class="hover-underline-animation"><a href="mailto:smitha24@rpi.edu" target="_blank">President - Andrew Smith</a></p>
+        </div>
+        <div style="text-align: center;">
+            <img src="images/email.png" alt="mail icon" class="mail-icon">
+            <p class="hover-underline-animation"><a href="mailto:gammanueta@rpi.edu" target="_blank">Mailing list</a></p>
         </div>
     </div>
+
+    <img src="images/bottom-01.svg" alt="divider" id="bottom">
+        <!-- add href tag after links are established-->
+        <div class="socials">
+            <div class="hvr-buzz-out" style="float:right"><a target="_blank" title="Instagram"><img src="images/insta.svg" alt="instagram"></a></div>
+            <div class="hvr-buzz-out" style="float:right"><a target="_blank" title="TikTok"><img src="images/tiktok.svg" alt="tiktok"></a></div>
+            <div class="hvr-buzz-out" style="float:right"><a target="_blank" title="LinkedIn"><img src="images/linked.svg" alt="linked"></a></div>
+            <div class="hvr-buzz-out" style="float:right"><a target="_blank" title="Twitter"><img src="images/twitter.svg" alt="twitter"></a></div>
+            <div class="hvr-buzz-out" style="float:right"><a target="_blank" title="Facebook"><img src="images/fb.svg" alt="facebook"></a></div>
+        </div>
+    
+    
 
    
 </body>
