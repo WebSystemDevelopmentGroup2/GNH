@@ -276,7 +276,7 @@ body::-webkit-scrollbar-thumb {
     animation-iteration-count: 1;
   }
 
-form {
+#tutor form {
   margin-top: 30px;
   margin-bottom: 30px;
   padding-left: 20%;

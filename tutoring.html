@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="index.js"></script>
+    <script src="date.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
@@ -25,41 +26,44 @@
 
     
     <main>
-        <form>
-            <div class="form-row">
-            <div class="col-6">
-                <input type="text" class="form-control" placeholder="Name">
-            </div>
-            <div class="col">
-                <input type="text" class="form-control" placeholder="Email">
-            </div>
-            <div class="col">
-                <input type="text" class="form-control" placeholder="RIN">
-            </div>
-            </div>
-            <div class="form-row">
+        <div id="tutor">
+            <form>
+                <div class="form-row">
                 <div class="col-6">
-                    <input class="form-control" id="date" name="date" placeholder="MM/DD/YYY" type="text"/>
+                    <input type="text" class="form-control" placeholder="Name">
                 </div>
                 <div class="col">
-                    <input placeholder="Selected time" type="text" id="input_starttime" class="form-control timepicker">
+                    <input type="text" class="form-control" placeholder="Email">
                 </div>
                 <div class="col">
-                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-                        <option selected>Choose Location...</option>
-                        <option>Library</option>
-                        <option>Union</option>
-                    </select>
+                    <input type="text" class="form-control" placeholder="RIN">
                 </div>
-            </div>
-            <div class="form-row">
-                <div class="col">
-                <input type="text" class="form-control" placeholder="Description">
                 </div>
-            </div>
-            <br>
-            <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
+                <div class="form-row">
+                    <div class="col-6">
+                        <input class="form-control" id="date" name="date" placeholder="MM/DD/YYY" type="text"/>
+                    </div>
+                    <div class="col">
+                        <input placeholder="Selected time" type="text" id="input_starttime" class="form-control timepicker">
+                    </div>
+                    <div class="col">
+                        <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                            <option selected>Choose Location...</option>
+                            <option>Library</option>
+                            <option>Union</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col">
+                    <input type="text" class="form-control" placeholder="Description">
+                    </div>
+                </div>
+                <br>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+        
     </main>
     
 
