@@ -105,6 +105,13 @@ img.mail-icon {
     position: absolute;
 }
 
+p {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+}
+
 .hover-underline-animation {
     display: inline-block;
     position: relative;
@@ -291,6 +298,23 @@ body::-webkit-scrollbar-thumb {
     animation-iteration-count: 1;
   }
 
+  /* Round Corners */
+.hvr-round-corners {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: border-radius;
+    transition-property: border-radius;
+  }
+  
+  .hvr-round-corners:hover, .hvr-round-corners:focus, .hvr-round-corners:active {
+    border-radius: 3em;
+  }
+
   .header {
     overflow: hidden;
     padding: 20px 10px;
@@ -309,11 +333,7 @@ body::-webkit-scrollbar-thumb {
     line-height: 25px;
     border-radius: 4px;
   }
-  
-  /* .header a:hover {
-    color: rgb(18, 3, 43);
-  } */
-  
+    
   .header a.active {
    color: #cad1fd;
    cursor: default;
@@ -324,6 +344,17 @@ body::-webkit-scrollbar-thumb {
     font-size: 30px; 
     color: rgb(255, 255, 255);
     padding: 10px;
+  }
+
+  #events a.hvr-buzz-out {
+    color: #0223f7;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5%;
   }
   
   @media screen and (max-width: 500px) {
@@ -343,7 +374,7 @@ body::-webkit-scrollbar-thumb {
       position: absolute;
       overflow: hidden;
   }
-=======
+
 #tutor form {
   margin-top: 30px;
   margin-bottom: 30px;
@@ -407,3 +438,55 @@ main {
 	padding: calc(var(--heading-height) + 1.5vw) 4em 0;
 }
 
+.news-wrap {
+    background-color: #cad1fd;
+    border-radius: 6px;
+    padding: 20px;
+    margin: 20px;
+    width: 40%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .news-wrap img {
+      width: 500px;
+      height: auto;
+  }
+  
+  .news-cont h3 {
+    font-family: "Roboto Mono", monospace;
+    color: #222;
+    font-size: 37px;
+    font-weight: 400;
+    margin: 0 15px;
+  }
+    
+  .news-text {
+    float: left;
+    display: block;
+  }
+
+.button {
+    border-radius: 8px;
+    background-color: #ffffffcc; 
+    border: 2px solid #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+.button:hover {
+    background-color: #cad1fd; 
+  }
+
+#top {
+    position: absolute;
+}
