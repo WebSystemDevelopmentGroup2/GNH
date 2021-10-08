@@ -5,17 +5,9 @@ $(document).ready(function() {
         dataType: "json",
         success: function(response){
 
-            var message = "";
-            
-            $.each(responseData.text, function(i, item) {
-                $.each(item.tutoring-text, function(x, s) {
-                    message += s;  
-                });     
-            });  
-            $("#tutoring-text").html(message);
+            $("#tutoring-text").html(response.text["tutoring-text"].join(""))
         }, 
         error: function(msg) {
-              // there was a problem
               alert("There was a problem: " + msg.status + " " + msg.statusText);
         }
       });
