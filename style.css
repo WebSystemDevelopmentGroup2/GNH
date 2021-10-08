@@ -87,6 +87,21 @@ img#down-arrow {
     color: #000000;
 }
 
+#gnh-logo {
+    width: 10%;
+    height: auto;
+    bottom: -485px;
+    position: absolute;
+}
+
+#itws-logo {
+    width: 10%;
+    height: auto;
+    bottom: -475px;
+    right: 12%;
+    position: absolute;
+}
+
 p {
     text-align: center;
     font-family: 'Roboto', sans-serif;
