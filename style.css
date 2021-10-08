@@ -94,11 +94,18 @@ img.mail-icon {
     color: #000000;
 }
 
-#logo {
-    width: 100px;
+#gnh-logo {
+    width: 10%;
     height: auto;
-    right: 0;
-    bottom: -900px;
+    bottom: -485px;
+    position: absolute;
+}
+
+#itws-logo {
+    width: 10%;
+    height: auto;
+    bottom: -475px;
+    right: 12%;
     position: absolute;
 }
 
