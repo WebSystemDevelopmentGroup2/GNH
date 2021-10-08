@@ -6,24 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="date.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/> 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css" rel="stylesheet">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="date.js"></script>
+    <script src="https://kit.fontawesome.com/455d2aa063.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"></script>
     <title>Tutoring Sign Up Page</title>
 </head>
 <body>
-<div class="tutorbody">
-    <header>
-        <div class="tutor"><h1>Tutoring Sign Up Page</h1></div>
-    </header>
+    <img src="images/top-01.svg" alt="divider" id="top"> 
+    <div class="page">
+        <div class="header">
+            <!-- <img src="images/gnh_logo.png" class="logo" style="width:100px; height:auto;"> -->
+            <div class="header-right" id="events">
+                <a href="tutoring.html" class="active" title="tutoring"><i class="fas fa-pencil-alt" style="padding-right: 20px;"></i></a>
+                <a class="hvr-buzz-out" href="events.html" title="events"><i class="fas fa-calendar" style="padding-right: 20px;"></i></a>
+                <a href="index.html" class="hvr-buzz-out" title="home"><i class="fas fa-home" style="padding-right: 20px;"></i></a>
+            </div>
+        </div>
+        <div class="content">
+            <h1 class="display-1" style="margin:15px">Tutoring Sign Up</h1>
+            <p style="width:80%;">
+                At these tutoring sessions, Gamma Nu Eta can help you with any course
+                in your ITWS degree program. This includes ITWS core classes, such as Intro to ITWS and Web Systems, or classes outside of ITWS, such as Computer 
+                Science 1 and Data Structures. We can also help with any questions that you might have about career development, resumes, as well as just general questions about RPI.
+            </p>
 
-    
-    <main>
+        </div>
+        
         <div id="tutor">
             <form>
                 <div class="form-row">
@@ -39,7 +56,7 @@
                 </div>
                 <div class="form-row">
                     <div class="col-6">
-                        <input class="form-control" id="date" name="date" placeholder="MM/DD/YYY" type="text"/>
+                        <input class="form-control" id="date" name="date" placeholder="MM/DD/YYYY" type="text"/>
                     </div>
                     <div class="col">
                         <input placeholder="Selected time" type="text" id="input_starttime" class="form-control timepicker">
@@ -61,10 +78,8 @@
                 <button type="submit" class="btn btn-primary">Submit</button>
             </form>
         </div>
+            
         
-    </main>
-    
-
-</div>
+    </div>
 </body>
 </html>
